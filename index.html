@@ -1,0 +1,75 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js ie6 oldie" lang="pl"><![endif]-->
+<!--[if IE 7]><html class="no-js ie7 oldie" lang="pl"><![endif]-->
+<!--[if IE 8]><html class="no-js ie8 oldie" lang="pl"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="pl"><!--<![endif]-->
+<head>
+    <title>Mtr</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="#"><img src="//kandeefloss.com/draw2base/images/kandeefloss.png" alt="kandeefloss" /></a>
+        <a href="#" class="switch icon-reorder"></a>
+    </header>
+    <div class="viewport">
+        <aside class="sidebar">
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+                <li><a href="#">Link 4</a></li>
+                <li><a href="#">Link 5</a></li>
+                <li><a href="#">Link 6</a></li>
+                <li><a href="#">Link 7</a></li>
+                <li><a href="#">Link 8</a></li>
+                <li><a href="#">Link 9</a></li>
+                <li><a href="#">Link 10</a></li>
+                <li><a href="#">Link 11</a></li>
+                <li><a href="#">Link 12</a></li>
+            </ul>
+        </aside>
+        <section class="content">
+            <article>
+                <h3>Lorem ipsum dolor sit amet</h3>
+                <img src="//placekitten.com/800/600" alt="" />
+                <p>Nam nec lacus ipsum, ac fringilla massa. Curabitur sed purus in justo aliquet hendrerit at sit amet sem. Vestibulum ac nunc ante. In hac habitasse platea dictumst. Duis id placerat lacus. Pellentesque ac convallis est. Nunc luctus vehicula lectus ac placerat. Integer id lorem vitae arcu egestas bibendum ac et massa. Quisque dictum pulvinar nulla vel sollicitudin.</p>
+            </article>
+            <article>
+                <h3>Curabitur congue erat ac nisi tempus volutpat</h3>
+                <img src="//placekitten.com/840/630" alt="" />
+                <p>Donec dictum molestie orci, non tempus nisi mattis non. Ut ut diam leo. Suspendisse potenti. Vestibulum eget faucibus enim. Nam semper scelerisque quam sed adipiscing. Morbi ultrices, risus eget luctus lobortis, massa lorem aliquam eros, et faucibus augue est eget libero. Etiam ut mi sed erat adipiscing laoreet. Aenean sem sapien, viverra sed cursus a, lobortis eget eros. Vestibulum eros sapien, accumsan interdum porta quis, fringilla tristique felis. Sed rhoncus commodo facilisis.</p>
+                <p>Maecenas est ante, vehicula at posuere sit amet, dictum ac nisl. Sed mollis ante sit amet augue dapibus sodales. Duis adipiscing purus vitae metus porttitor eleifend. Ut sagittis dictum mattis. Proin sodales euismod eleifend. Ut eget purus erat, sed scelerisque arcu. Duis nisl turpis, dictum sit amet pulvinar imperdiet, ultricies a diam. Donec non elit a metus cursus varius. Suspendisse vitae libero nisl, molestie posuere quam. Ut egestas quam ac lectus varius in aliquam justo rutrum. Integer auctor mi ut est dapibus egestas. Integer vestibulum vehicula neque sit amet porta. Sed id cursus nibh. Duis ut dolor eu orci mollis dictum nec eu ante. Aliquam blandit, leo ac elementum tincidunt, neque diam ultricies ante, id mattis erat leo a diam. Donec tortor eros, pulvinar quis auctor ac, faucibus quis leo.</p>
+            </article>
+            <article>
+                <h3>Praesent in orci id eros</h3>
+                <img src="//placekitten.com/880/660" alt="" />
+                <p>Donec sit amet augue ac mauris aliquam consequat. Vestibulum a suscipit augue. Quisque porta aliquam hendrerit. Sed justo orci, egestas eu ultricies vitae, aliquam eget ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut consequat elementum felis in vestibulum. Vivamus porta ante in orci imperdiet dictum. Vestibulum congue risus nec odio vehicula cursus. Maecenas suscipit iaculis ultricies. Aliquam consectetur, ipsum nec semper sagittis, lorem ligula condimentum dui, id elementum purus metus vel massa. Pellentesque cursus vulputate justo, at viverra velit cursus ac. Curabitur sit amet mauris non velit iaculis cursus at at odio.</p>
+                <p>Nulla vulputate sodales nisi ut feugiat. Ut sapien lacus, iaculis eu volutpat ac, dapibus at magna. Proin ut dolor nec erat porttitor facilisis. Curabitur consequat felis ut magna adipiscing nec malesuada mi convallis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam congue sollicitudin erat, in tincidunt nunc egestas ultrices. Nullam nec metus non sapien pulvinar suscipit vitae bibendum neque. Praesent ultrices commodo est, malesuada viverra turpis imperdiet non. Duis quis velit sed mi ullamcorper mollis. Pellentesque sapien nisi, sagittis sit amet ornare id, facilisis sed nulla. In sagittis semper nisl id sodales. Donec est felis, lacinia eget pretium vitae, accumsan faucibus nisl.</p>
+            </article>
+        </section>
+        <div class="overlay"></div>
+    </div>
+    <footer>
+        <p>Copyright © <a href="http://kandeefloss.com">mck</a></p>
+    </footer>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>
+        $(function() {
+            $('a.switch').on('click', function(e) {
+                e.preventDefault();
+                var body = $('body');
+                if(body.hasClass('offcanvas')) {
+                    var offset = -parseInt(body.css('top'));
+                    body.removeClass('offcanvas').css('top', 0).scrollTop(offset);
+                } else {
+                    body.css('top', -window.pageYOffset+'px').addClass('offcanvas');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
