@@ -387,7 +387,7 @@ footer a:hover {
         float: left;
         position: static;
         padding: 1em .5em;
-        width: 11em;
+        width: 20%;
     }
     
     .sidebar a {
@@ -405,11 +405,11 @@ footer a:hover {
     .content {
         float: right;
         margin-top: 1em;
-        width: 48em;
+        width: 80%;
     }
 }
 
-@media only screen and (max-width: 48em) {
+@media only screen and (max-width: 47.99em) {
     .offcanvas {
         overflow: hidden;
         position: fixed;
